@@ -76,7 +76,7 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 100px 20px 50px;
+    padding: 120px 20px 80px;
 }
 
 .hero-content h1 {
@@ -122,8 +122,9 @@ body {
 .services h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #8B5CF6;
+    color: #A855F7;
     margin-bottom: 3rem;
+    font-weight: 600;
 }
 
 .services-grid {
@@ -183,13 +184,13 @@ body {
 .why-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    gap: 4rem;
     align-items: center;
 }
 
 .why-images {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -268,15 +269,18 @@ body {
 .testimonial {
     max-width: 800px;
     margin: 0 auto 3rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
 }
 
 .testimonial-avatar {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto 1rem;
+    flex-shrink: 0;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     border: 3px solid rgba(255, 255, 255, 0.3);
 }
@@ -339,10 +343,10 @@ body {
     .why-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
     }
     
     .why-images {
-        flex-direction: row;
         justify-content: center;
     }
     
@@ -354,6 +358,12 @@ body {
     .services-grid,
     .founders-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
     }
 }
 

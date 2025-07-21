@@ -1,16 +1,6 @@
-// Smooth scrolling for navigation links
+// Navigation and animation effects
 document.addEventListener('DOMContentLoaded', function() {
-    // Add smooth scrolling behavior
-    const contactBtns = document.querySelectorAll('.contact-btn, .cta-button');
-    
-    contactBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            // For now, just scroll to contact section
-            document.querySelector('.contact').scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+    // Remove smooth scrolling - buttons will just be regular buttons
 
     // Add scroll effect to navbar
     window.addEventListener('scroll', function() {
